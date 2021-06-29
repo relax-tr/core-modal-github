@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "modal", "modal\modal.csproj", "{2BE619EC-D02A-41CA-AA03-56673AA2BCEF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2BE619EC-D02A-41CA-AA03-56673AA2BCEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BE619EC-D02A-41CA-AA03-56673AA2BCEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BE619EC-D02A-41CA-AA03-56673AA2BCEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BE619EC-D02A-41CA-AA03-56673AA2BCEF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3B769AE3-52D5-4124-ABB7-0B6E0AD4E8B6}
+	EndGlobalSection
+EndGlobal

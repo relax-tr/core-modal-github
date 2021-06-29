@@ -1,0 +1,58 @@
+﻿   Enumerable<modal.Models.Soru>
+
+    @{
+        ViewBag.Title = "Index";
+    }
+
+    <h2>Index</h2>
+
+    <p>
+        @Html.ActionLink("View All", "Index")
+
+        @using (Html.BeginForm("Search", "Home", FormMethod.Post))
+        {
+            <table>
+                <tr>
+                    <td>
+                        <input type="text" id="txtName" name="searchparam" placeholder="type here to search" />
+                    </td>
+                    <td>
+                        <input type="submit" id="btnSubmit" value="Search" />
+                    </td>
+                </tr>
+            </table>
+        }
+
+    </p>
+    <table class="table">
+        <tr>
+            <th>vsdfgvsd
+            </th>
+            <th>gvr</th>
+            <th>
+                sdvsd </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+                <td>
+                    @*@Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+                        @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+                        @Html.ActionLink("Delete", "Delete", new { id=item.Id })*@
+
+                    <a href="javascript:void(0);" class="anchorDetail" data-id="@item.Id">Details</a>
+
+                </td>
+            </tr>
+
+        }
+
+    </table>

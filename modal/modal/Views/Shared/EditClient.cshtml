@@ -1,0 +1,46 @@
+﻿@model modal.Models.Soru
+
+
+<form id="myForm">
+    @Html.HiddenFor(m => m.no)
+
+    @Html.TextBoxFor(model => model.name, new { @class = "form-control", @placeholder = "Name" })
+
+
+    <a href="#" id="btnSubmit" class="btn btn-success btn-block">
+        @if (Model.no > 0)
+        {
+            <span>Update</span>
+        }
+        else
+        {
+            <span>Save</span>
+        }
+    </a>
+
+</form>
+<a href="#" id="btnSubmit" class="btn btn-sucess btn-block">Add Client</a>
+
+
+
+
+<script>
+    $(document).ready(function () {
+        $("#btnSubmit").click(function () {
+            $("#loaderDiv").show();
+
+            var myformdata = $("#myForm").serialize();
+            alert("Success")
+            $.ajax({
+
+
+                type: "POST",
+                url: "/Client/ViewClients",
+                data: myformdata,
+                success: function () {
+                    $("#loaderDiv").hide();
+                    $("#myModal1").modal("hide");
+                }
+            })
+        })
+    })

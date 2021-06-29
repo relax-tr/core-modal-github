@@ -1,0 +1,25 @@
+﻿@addTagHelper*, Microsoft.AspNetCore.Mvc.TagHelpers
+@model modal.Models.Soru
+
+<div class="container">
+    <h4>Customer Details</h4>
+    <hr />
+    <div class="row">
+        <div class="col-md-4">
+            <form asp-action="Create" asp-controller="Home">
+                <div class="form-group">
+                    <label asp-for="no" class="control-label"></label>
+                    <input asp-for="no" class="form-control" readonly="readonly" />
+                </div>
+                <div class="form-group">
+                    <label asp-for="name" class="control-label"></label>
+                    <input asp-for="name" class="form-control" readonly="readonly" />
+                </div>
+                <div class="form-group">
+                    <label asp-for="category" class="control-label"></label>
+                    <input asp-for="category" class="form-control" readonly="readonly" />
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
